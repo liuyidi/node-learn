@@ -52,5 +52,12 @@ var fsWriteFile = () => {
 }
 
 
-fsWriteFile();
-fsReadStream();
+/**************通过文件流写入***************/
+var fsWriteSteam = fs.createWriteStream('./file.txt', 'utf8')
+fsWriteSteam.on('close', function() {
+  console.log('已经关闭')
+})
+console.log(fsWriteSteam)
+fsWriteSteam.write('hello-stream')
+fsWriteFile.write('world-stream')
+fsWriteFile.end('')
