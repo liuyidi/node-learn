@@ -8,7 +8,11 @@
 
 - createWriteStream 通过文件流写入
 
-- exists   
+- exists  文件是否存在 （已经被废弃）
+- access  判断文件是否存在（默认模式），还可以用来判断文件的权限
 
 - mkdir 异步创建目录
 - mkdirSync 同步创建目录
+
+- unlink 删除文件
+- unlinkSync 同步删除文件

@@ -57,7 +57,17 @@ var fsWriteSteam = fs.createWriteStream('./file.txt', 'utf8')
 fsWriteSteam.on('close', function() {
   console.log('已经关闭')
 })
-console.log(fsWriteSteam)
-fsWriteSteam.write('hello-stream')
-fsWriteFile.write('world-stream')
-fsWriteFile.end('')
+// console.log(fsWriteSteam)
+// fsWriteSteam.write('hello-stream')
+// fsWriteFile.write('world-stream')
+// fsWriteFile.end('')
+
+/**文件是否存在**/
+fs.access('./fileForRead.txt', function(err){
+  console.log(err)
+});
+
+fs.access('./file.txt', function(err){
+  console.log(err)
+  console.log('file.txt存在');
+});
