@@ -1,5 +1,7 @@
 ### Fs
 
+#### Methods
+
 - readFileSync 同步读取
 - readFile 异步读取
 - createReadStream 读取文件流
@@ -16,3 +18,10 @@
 
 - unlink 删除文件
 - unlinkSync 同步删除文件
+
+- rename 文件重命名
+- renameSync 同步文件重命名
+
+- readdirSync 遍历文件目录（只遍历一层）
+
+####
