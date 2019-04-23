@@ -24,4 +24,8 @@
 
 - readdirSync 遍历文件目录（只遍历一层）
 
-####
+#### 文件状态
+
+- stat() 获取文件状态
+- stats.isFile() -- 是否文件
+- stats.isDirectory() -- 是否目录
