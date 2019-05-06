@@ -4,3 +4,6 @@
 ## API
 
 - fs
+- path
+- process
+- stream
